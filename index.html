@@ -21,7 +21,8 @@
         <i class="fa fa-whatsapp my-float"></i>
 
     </a>
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS -->
     <style>
         .float {
@@ -792,11 +793,21 @@
 
 
 
-
                     <!-- Single News Area -->
 
 
 
+                    <div class="social">
+                        <div class="socialicon">
+                            <a href="" class="tw" title="Tweet this page!">
+                                <img src="img/bg-img/facebook.png" alt="">
+                            </a>
+                            <a href="" class="tw" title="Tweet this page!">
+                                <img src="img/bg-img/instagram.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
 
                     <!-- Single News Area -->
 
@@ -821,6 +832,14 @@
     <script src="js/plugins/plugins.js "></script>
     <!-- Active js -->
     <script src="js/active.js "></script>
+    <script>
+        $(function() {
+            $('.social a').tooltip({
+                placement: "right",
+                container: 'body'
+            });
+        });
+    </script>
 
 
 </body>
